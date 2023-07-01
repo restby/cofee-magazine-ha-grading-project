@@ -13,7 +13,6 @@
     <link rel="preload" href="/fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="/fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/Montserrat-ExtraBold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
@@ -541,8 +540,7 @@
           <div class="catalog__pagination pagination">
             <ul class="pagination__list">
               <li class="pagination__item">
-                <button class="pagination__btn pagination__btn--prev" type="button">
-                  <span class="visually-hidden">Предыдущая страница.</span>
+                <button class="pagination__btn pagination__btn--prev" type="button" aria-label="Предыдущая страница.">
                   <span class="pagination__btn-text">Назад</span>
                   <svg aria-hidden="true" focusable="false" fill="currentColor" width="16" height="16"
                     viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -561,10 +559,10 @@
                 <a class="pagination__link" href="catalog.html">3</a>
               </li>
               <li class="pagination__item">
-                <button class="pagination__btn pagination__btn--next" type="button">
+                <button class="pagination__btn pagination__btn--next" type="button" aria-label="Следующая
+                    страница.">
                   <span class="pagination__btn-text">Вперёд</span>
-                  <span class="visually-hidden">Следующая
-                    страница.</span><svg aria-hidden="true" focusable="false" fill="currentColor" width="16" height="16"
+                  <svg aria-hidden="true" focusable="false" fill="currentColor" width="16" height="16"
                     viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.669.003-.002c.26-.26.26-.681 0-.94L7.135 2.864Z" />
@@ -610,7 +608,7 @@
             </span>
             <ul class="page-footer__list social__list">
               <li class="social__item">
-                <a class="social__link" href="vk.com">
+                <a class="social__link" href="vk.com" aria-label="Ссылка на страницу в VK.">
                   <svg class="social__icon social__icon--vk" aria-hidden="true" focusable="false" fill="currentColor"
                     width="20" height="20">
                     <use xlink:href="img/icons/stack.svg#icon-vk"></use>
@@ -618,7 +616,7 @@
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="pinterest.com">
+                <a class="social__link" href="pinterest.com" aria-label="Ссылка на страницу в Pinterest.">
                   <svg class="social__icon social__icon--pinterest" aria-hidden="true" focusable="false"
                     fill="currentColor" width="22" height="22">
                     <use xlink:href="img/icons/stack.svg#icon-pinterest"></use>
@@ -626,7 +624,7 @@
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="ok.ru">
+                <a class="social__link" href="ok.ru" aria-label="Ссылка на страницу в ОК.">
                   <svg class="social__icon social__icon--ok" aria-hidden="true" focusable="false" fill="currentColor"
                     width="20" height="20">
                     <use xlink:href="img/icons/stack.svg#icon-ok"></use>
